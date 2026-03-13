@@ -4,10 +4,10 @@
 ## 一、项目架构
 CG-Lab/  
 └── src/  
-    └── Work0/  
-        ├── 
-__init__
-.py  
-        ├── config.py  
-        ├── physics.py  
-        └── main.py
+      └── Work0/  
+          ├── 
+  __init__
+  .py  
+          ├── config.py  
+          ├── physics.py  
+          └── main.py
