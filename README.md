@@ -56,4 +56,4 @@ CG-Lab/
 
 
 ## 四、效果演示 
-![粒子效果演示](demo.gif)
+![粒子效果演示](https://github.com/UNVERSIA/CG-Lab/raw/main/demo.gif)
