@@ -211,6 +211,8 @@ __pycache__/
 *.pyc
 .ruff_cache/
 
+imgui.ini
+
 src/Work08/models/
 src/Work08/outputs/
 *.pkl
