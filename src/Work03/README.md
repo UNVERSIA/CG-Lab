@@ -22,7 +22,7 @@ uv run python src/Work03/main.py
 
 ```text
 Work03/
-├── __init__.py      # 模块标识文件，标记 Work03 为 Python 包
+├── __init__.py      # 模块标识文件
 ├── main.py          # 实验三主程序，包含曲线计算、像素绘制和交互逻辑
 ├── README.md        # 实验三说明文档
 └── assets/
