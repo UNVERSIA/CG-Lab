@@ -13,7 +13,7 @@
 ```text
 CG-Lab/
 ├── src/
-│   ├── Work01/       # 实验一目录
+│   ├── Work01/      # 实验一目录
 │   ├── Work02/      # 实验二目录
 │   ├── Work03/      # 实验三目录
 │   ├── Work04/      # 实验四目录
@@ -35,7 +35,7 @@ CG-Lab/
 
 | 实验编号 | 实验名称 | 实验目录 | README 文档 |
 | --- | --- | --- | --- |
-| Work01 | 万有引力粒子群模拟 | [`src/Work0/`](src/Work0/) | [`src/Work0/README.md`](src/Work0/README.md) |
+| Work01 | 万有引力粒子群模拟 | [`src/Work01/`](src/Work01/) | [`src/Work01/README.md`](src/Work01/README.md) |
 | Work02 | 三维变换与透视投影 | [`src/Work02/`](src/Work02/) | [`src/Work02/README.md`](src/Work02/README.md) |
 | Work03 | 贝塞尔曲线与 B 样条曲线 | [`src/Work03/`](src/Work03/) | [`src/Work03/README.md`](src/Work03/README.md) |
 | Work04 | Phong 光照模型 | [`src/Work04/`](src/Work04/) | [`src/Work04/README.md`](src/Work04/README.md) |
