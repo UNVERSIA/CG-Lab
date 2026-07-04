@@ -1,63 +1,45 @@
-# CG-Lab
-计算机图形学课程实验一：万有引力粒子群
+# CG-Lab 计算机图形学课程实验
 
 | 姓名 | 吕佳忆 |
 | 学号 | 202411081068 |
 | 专业 | 人工智能 |
 
-项目简介：
-项目基于 Taichi 语言实现，利用 GPU 并行计算能力，创建了一个可与鼠标交互的粒子引力系统。
+仓库按照实验编号划分目录，每个实验均包含独立的代码文件和 README 说明文档，便于查看实验目标、项目结构、代码逻辑、实现功能和运行效果。
 
-粒子会被鼠标位置吸引、移动、反弹，整体效果流畅、视觉柔和。
+---
 
-## 一、项目架构
-```plaintext
+## 一、仓库目录结构
+
+```text
 CG-Lab/
-└── src/
-    └── Work0/
-        ├── __init__.py      # 模块标识文件 (标记Work0为Python包)
-        ├── config.py        # 全局参数配置中心 (所有可调节参数集中管理)
-        ├── physics.py       # GPU并行物理计算核心 (粒子运动、交互逻辑)
-        └── main.py          # 程序入口+界面渲染 (窗口、鼠标交互、粒子绘制)
+├── src/
+│   ├── Work01/       # 实验一目录
+│   ├── Work02/      # 实验二目录
+│   ├── Work03/      # 实验三目录
+│   ├── Work04/      # 实验四目录
+│   ├── Work05/      # 实验五目录
+│   ├── Work06/      # 实验六目录
+│   ├── Work07/      # 实验七目录
+│   └── Work08/      # 实验八目录
+├── main.py
+├── README.md
+├── pyproject.toml
+├── uv.lock
+├── .python-version
+└── .gitignore
 ```
-## 二、代码逻辑
-1.初始化  
-（1）在 config.py 中定义粒子数量、颜色、引力、阻力等全局参数。
 
-（2）在 physics.py 中通过 Taichi 开辟显存空间，存储粒子位置、速度、颜色。
+---
 
-（3）随机生成粒子初始位置与随机颜色。
+## 二、实验目录与 README 链接
 
-
-2.物理更新  
-（1） 每一帧获取鼠标位置，计算每个粒子到鼠标的方向与距离。
-
-（2）对粒子施加朝向鼠标的引力。
-
-（3）加入空气阻力，使粒子不会无限加速。
-
-（4）粒子碰到窗口边界会自动反弹，不超出画面范围。
-
-
-3.渲染阶段  
-（1） main.py 创建窗口，循环执行物理计算与画面绘制。
-
-（2）将 GPU 计算后的粒子位置与颜色绘制到屏幕上。
-
-
-
-## 三、实现功能
-
-（1）鼠标引力交互：粒子会跟随鼠标移动，距离越近吸引力越强
-
-（2）随机颜色：从预设的 5 种颜色列表中随机分配
-
-（3）物理运动模拟：包含引力、阻力、边界反弹
-
-（4）实现 GPU 并行计算
-
-（5）可自由调节参数：粒子数量、速度、大小、颜色
-
-
-## 四、效果演示 
-![粒子效果演示](https://github.com/UNVERSIA/CG-Lab/raw/main/demo.gif)
+| 实验编号 | 实验名称 | 实验目录 | README 文档 |
+| --- | --- | --- | --- |
+| Work01 | 万有引力粒子群模拟 | [`src/Work0/`](src/Work0/) | [`src/Work0/README.md`](src/Work0/README.md) |
+| Work02 | 三维变换与透视投影 | [`src/Work02/`](src/Work02/) | [`src/Work02/README.md`](src/Work02/README.md) |
+| Work03 | 贝塞尔曲线与 B 样条曲线 | [`src/Work03/`](src/Work03/) | [`src/Work03/README.md`](src/Work03/README.md) |
+| Work04 | Phong 光照模型 | [`src/Work04/`](src/Work04/) | [`src/Work04/README.md`](src/Work04/README.md) |
+| Work05 | Whitted-Style 光线追踪 | [`src/Work05/`](src/Work05/) | [`src/Work05/README.md`](src/Work05/README.md) |
+| Work06 | 可微光栅化与网格优化 | [`src/Work06/`](src/Work06/) | [`src/Work06/README.md`](src/Work06/README.md) |
+| Work07 | 质点-弹簧布料模拟 | [`src/Work07/`](src/Work07/) | [`src/Work07/README.md`](src/Work07/README.md) |
+| Work08 | SMPL 模型与 LBS 蒙皮过程可视化 | [`src/Work08/`](src/Work08/) | [`src/Work08/README.md`](src/Work08/README.md) |
