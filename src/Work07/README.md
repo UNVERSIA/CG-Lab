@@ -22,7 +22,7 @@ uv run python src/Work07/main.py
 
 ```text
 Work07/
-├── __init__.py      # 模块标识文件，标记 Work07 为 Python 包
+├── __init__.py      # 模块标识文件
 ├── main.py          # 实验七主程序，包含布料初始化、物理计算、积分方法和渲染逻辑
 ├── README.md        # 实验七说明文档
 └── assets/
