@@ -33,10 +33,10 @@ Work08/
 ├── README.md                  # 实验八说明文档
 ├── models/
 │   └── smpl/
-│       └── SMPL_NEUTRAL.pkl   # SMPL 模型文件，运行时需要，提交 Git 时不上传
-├── outputs/                   # 程序运行生成的原始输出结果，提交 Git 时不上传
+│       └── SMPL_NEUTRAL.pkl   # SMPL 模型文件
+├── outputs/                   # 程序运行生成的原始输出结果
 └── assets/
-    ├── comparison_grid.png    # 四阶段对比图，用于 README 展示
+    ├── comparison_grid.png    # 四阶段对比图
     ├── stage_a_template_weights.png
     ├── stage_b_shaped_joints.png
     ├── stage_c_pose_offsets.png
@@ -89,8 +89,6 @@ src/Work08/main.py
 
 （3）从模型中获取模板网格 `v_template`、形状基 `shapedirs`、姿态基 `posedirs`、关节回归器 `J_regressor`、蒙皮权重 `lbs_weights` 和面片索引 `faces`。
 
-（4）代码中加入了 chumpy pickle 兼容处理，用于读取部分旧版 SMPL 模型文件。
-
 2. 形状校正阶段
 
 （1）程序构造一组示例 shape 参数 `betas`。
@@ -135,7 +133,7 @@ src/Work08/main.py
 
 （5）保存四个阶段的总对比图 `comparison_grid.png`。
 
-（6）保存运行摘要 `summary.txt`，记录模型顶点数、面片数、关节数和误差信息。
+（6）记录模型顶点数、面片数、关节数和误差信息。
 
 ---
 
