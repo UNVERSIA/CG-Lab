@@ -22,7 +22,7 @@ uv run python src/Work04/main.py
 
 ```text
 Work04/
-├── __init__.py      # 模块标识文件，标记 Work04 为 Python 包
+├── __init__.py      # 模块标识文件
 ├── main.py          # 实验四主程序，包含相交检测、Phong 光照计算和 UI 交互
 ├── README.md        # 实验四说明文档
 └── assets/
